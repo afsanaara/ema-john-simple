@@ -11,7 +11,7 @@ const Shop = () => {
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[]);
-
+//handle cart
     const handleAddToCart=(product)=>{
         console.log(product);
         const newCart=[...cart,product];
